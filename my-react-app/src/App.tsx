@@ -3,6 +3,7 @@ import './App.css'
 import Car from './componentes/carro'
 import Carroca from './componentes/carrocas'
 import Cadastro from './componentes/cadastro'
+import ConsultaProduto from './componentes/consultaProduto'
 
 
 function App() {
@@ -10,7 +11,7 @@ function App() {
   const [count, setCount] = useState(10)
     return (
     <>
-      <h1>Helo world</h1>
+      {/* <h1>Helo world</h1>
       <div className="card">
         <button onClick={() => setCount(count + 1)}>
           +
@@ -29,7 +30,8 @@ function App() {
       </div>
       <div>
         <Cadastro />
-      </div>
+      </div> */}
+      <ConsultaProduto />
     </>
   )
 }
