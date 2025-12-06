@@ -4,6 +4,8 @@ import Car from './componentes/carro'
 import Carroca from './componentes/carrocas'
 import Cadastro from './componentes/cadastro'
 import ConsultaProduto from './componentes/consultaProduto'
+import type { IProduto } from './interfaces/produto.interface'
+import NovoProduto from './componentes/novoProduto'
 
 
 function App() {
@@ -31,7 +33,7 @@ function App() {
       <div>
         <Cadastro />
       </div> */}
-      <ConsultaProduto />
+      <NovoProduto />
     </>
   )
 }
