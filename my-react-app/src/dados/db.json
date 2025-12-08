@@ -1,0 +1,46 @@
+{
+  "produtos": [
+    {
+      "id": "fa4c",
+      "nome": "cebola",
+      "descricao": "cebola roxa",
+      "preco": 10,
+      "imagem": "https://m.media-amazon.com/images/I/71RxcmFY4DL._AC_SX679_.jpg"
+    },
+    {
+      "id": "7641",
+      "nome": "outra cebola",
+      "descricao": "fef",
+      "preco": 12,
+      "imagem": "https://m.media-amazon.com/images/I/71RxcmFY4DL._AC_SX679_.jpg"
+    },
+    {
+      "id": "4610",
+      "nome": "tomate",
+      "descricao": "cereja",
+      "preco": 1,
+      "imagem": "https://m.media-amazon.com/images/I/71RxcmFY4DL._AC_SX679_.jpg"
+    },
+    {
+      "id": "8c92",
+      "nome": "dwqd",
+      "descricao": "r3eef",
+      "preco": 12,
+      "imagem": "https://m.media-amazon.com/images/I/71RxcmFY4DL._AC_SX679_.jpg"
+    },
+    {
+      "id": "aa15",
+      "nome": "cebola",
+      "descricao": "oo",
+      "preco": 12,
+      "imagem": "https://m.media-amazon.com/images/I/71RxcmFY4DL._AC_SX679_.jpg"
+    },
+    {
+      "id": "b9e5",
+      "nome": "Trigo",
+      "descricao": "para pão",
+      "preco": 12,
+      "imagem": "https://m.media-amazon.com/images/I/71RxcmFY4DL._AC_SX679_.jpg"
+    }
+  ]
+}

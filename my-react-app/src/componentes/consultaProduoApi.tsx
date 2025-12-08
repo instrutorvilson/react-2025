@@ -1,9 +1,16 @@
+import { useEffect, useState } from "react";
 import type { IProduto } from "../interfaces/produto.interface";
 import CardProduto from "./carProduto";
 
-interface Props { dados:IProduto[] }
+function ConsultaProdutoAPI(){
+   const [dados, setDados] = useState<IProduto[]>([])
 
-function ConsultaProduto({dados}:Props){
+   useEffect(()=>{
+      fetch('http://localhost:3000/produtos')
+      .then(resp => resp.json())
+      .then(data => setDados(data))
+   },[])
+
     return(
         <div style={{'display':'flex','flexWrap':'wrap'}}>
            {/* <CardProduto
@@ -22,4 +29,4 @@ function ConsultaProduto({dados}:Props){
     )
 }
 
-export default ConsultaProduto
+export default ConsultaProdutoAPI

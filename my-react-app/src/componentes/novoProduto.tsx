@@ -37,9 +37,23 @@ function NovoProduto(){
         produto.preco = 0
     }
 
+    function salvar_api(): void {
+        const novo = {...produto}        
+        fetch('http://localhost:3000/produtos',
+            { 
+                method : 'POST',
+                headers: { 'Content-Type':'Application/JSON'},
+                body: JSON.stringify(novo)
+            }
+        )
+        produto.nome = ''
+        produto.descricao = ''
+        produto.preco = 0        
+    }
+
     return(
-        <div className="m-5">          
-                <label>Informe nome</label>
+        <div className="m-5">      
+          <label>Informe nome</label>
                 <input type="text"
                     className="form-control" 
                     value={produto?.nome}
@@ -58,8 +72,8 @@ function NovoProduto(){
                     onChange={(e) => setProduto({...produto, preco: parseFloat(e.target.value)})}
                 />
                 <button className="btn btn-primary mt-3 mb-3" onClick={handleSubmit}>Gravar</button>
-                  
-            <ConsultaProduto dados={dados}/>
+                <button className="btn btn-primary mt-3 mb-3" onClick={salvar_api}>Gravar na api</button>                  
+            
         </div>
     )
 }

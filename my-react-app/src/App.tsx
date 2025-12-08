@@ -6,6 +6,7 @@ import Cadastro from './componentes/cadastro'
 import ConsultaProduto from './componentes/consultaProduto'
 import type { IProduto } from './interfaces/produto.interface'
 import NovoProduto from './componentes/novoProduto'
+import ConsultaProdutoAPI from './componentes/consultaProduoApi'
 
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
         <Cadastro />
       </div> */}
       <NovoProduto />
+      <ConsultaProdutoAPI />
     </>
   )
 }
