@@ -16,11 +16,14 @@ function Formulario() {
             novosErros.email = "Formato de email inválido.";
         }
         setErros(novosErros);
-        return Object.keys(novosErros).length === 0;
+        //return Object.keys(novosErros).length === 0;
+        return Object.values(novosErros).every(erro => erro === ""); 
     }
 
     function handleSubmit(e:React.FormEvent<HTMLFormElement>) {
         e.preventDefault();
+        console.log(!validar())
+
         if (!validar()) return;
         console.log("Formulário válido:", { nome, email });
     }
