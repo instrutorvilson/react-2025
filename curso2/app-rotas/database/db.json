@@ -1,0 +1,28 @@
+{
+  "contatos": [
+    {
+      "id": "fafd",
+      "nome": "pedro",
+      "fone": "(47)9090-3043",
+      "email": "pedro@gmail.com"
+    },
+    {
+      "id": "3b5f",
+      "nome": "Artur",
+      "fone": "12345",
+      "email": "artur@gmail.com"
+    },
+    {
+      "id": "eed6",
+      "nome": "teste",
+      "fone": "123",
+      "email": "teste@gmail.com"
+    },
+    {
+      "id": "74bb",
+      "nome": "1",
+      "fone": "1",
+      "email": "1@A"
+    }
+  ]
+}
